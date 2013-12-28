@@ -8,7 +8,7 @@ var HomeView = function(store) {
  
     this.initialize();
     
-    render: function() {
+    this.render = function() {
         this.el.html(HomeView.template());
         return this;
     };
