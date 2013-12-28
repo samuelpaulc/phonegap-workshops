@@ -4,9 +4,10 @@ var app = {
 	    var self = this;
 	    this.store = new MemoryStore(function() {
 	        $('body').html(new HomeView(self.store).render().el);
+	        self.registerEvents();;
 	    });
 	    
-	   this.registerEvents();
+	   
 	},
     
     showAlert: function (message, title) {
