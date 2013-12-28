@@ -6,7 +6,7 @@ var app = {
 	        $('body').html(new HomeView(self.store).render().el);
 	    });
 	    
-	   this.registerEvents();    
+	   this.registerEvents();
 	},
     
     showAlert: function (message, title) {
